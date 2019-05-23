@@ -9,7 +9,7 @@ function onLoad() {
   vallen.play(Audio);
 }
 
-// Tear & peukie animation
+// Tear & sigaret filter animation
 document.querySelector('svg').addEventListener("click", peukie);
 
 function peukie() {
@@ -17,7 +17,7 @@ function peukie() {
   document.getElementById("sig-filter-2").classList.toggle('sigout');
 }
 
-// Key press
+// Key press spatiebar
 document.body.onkeyup = function(e){
     if(e.keyCode == 32){
       document.getElementById("tear").classList.toggle('tearoff');
