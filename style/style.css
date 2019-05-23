@@ -4,56 +4,83 @@
 }
 
 body {
- position: fixed;
- overflow: hidden;
- display: flex;
- justify-content: center;
- align-items: center;
- width: 100vw;
- height: 100vh;
- background-color: #FECB53;
+  position: fixed;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: beige;
+}
 
- /* Gradient*/
- /* -webkit-background-size: cover;
- -moz-background-size: cover;
- -o-background-size: cover;
- background-size: cover;
- background-repeat: no-repeat;
- background: -webkit-linear-gradient(to left top, #ffffff 0%, #afafaf 100%);
- background: -moz-linear-gradient(to left top, #ffffff 0%, #afafaf 100%);
- background: -ms-linear-gradient(to left top, #ffffff 0%, #afafaf 100%);
- background: -o-linear-gradient(to left top, #ffffff 0%, #afafaf 100%);
- background: linear-gradient(to left top, #ffffff 0%, #afafaf 100%); */
+.all-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .svg-1 {
   width: 400px;
-  height:662px;
+  height: 662px;
+  margin-top: -3rem;
+  cursor:pointer;
 }
 
+/*********** tekst "click to get Lucky"  ***********/
+
+.tekst {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin-top: -3rem;
+  background-color: #9C2A22;
+  height: 9vh;
+}
+
+p {
+  font-family: 'Lobster', cursive;
+  text-transform: capitalize;
+  font-weight: 100;
+  font-size: 3em;
+  color: white;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
+
+#cigarettes:hover {
+  opacity: 0;
+}
+
+#tear-on {
+  color: beige;
+}
+
+
 /*********** Loading animation ***********/
+
 .drop {
   animation: drop 1.2s forwards;
 }
 
-/* translate3d(x,y,z) */
 @keyframes drop {
   0% {
     transform:
-      translate3d(0, -700px, 0)
-      rotate3d(0, 0, 1, 10deg);
+      translate3d(0, -700px, 0) rotate3d(0, 0, 1, 10deg);
   }
 
   50%, 55% {
     transform:
-      translate3d(0, -120px, 0)
-      rotate3d(0, 0, 1, 5deg);
+      translate3d(0, -120px, 0) rotate3d(0, 0, 1, 5deg);
   }
 
   60% {
     transform:
-      translate3d(0, 20px, 0)
-      rotate3d(0, 0, 1, -10deg);
+      translate3d(0, 20px, 0) rotate3d(0, 0, 1, -10deg);
   }
 
   100% {
@@ -61,89 +88,113 @@ body {
   }
 }
 
-/************** Smokey Background **************/
+/*********** Peukie animation  ***********/
 
-#playground {
-  z-index: -30;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: 0;
-  padding: 0;
-  background: radial-gradient(#EE2D07, #DFBA23);
-}
-
-  .smoke {
-    bottom: -200px;
-    background: url(../assets/Concept.png) transparent no-repeat 0 0;
-    height: 200px;
-    width: 200px;
-    position: absolute;
-    margin: -100px 0 0 -100px;
-    background-size: contain;
-    opacity: 0;
-    animation-name: smoking;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-timing-function: ease-in;
-    animation-fill-mode: forwards;
-  }
-
-@keyframes smoking {
-0% {
-  opacity: 0.1;
-  bottom: -10px;
-  transform: scale(1) rotateZ(0);
-}
-
-20% {
+#tear {
   opacity: 1;
+  transition: all 3s;
 }
 
-90% {
-  bottom: 65%;
-  opacity: 0.8;
-  transform: scale(2.7) rotateZ(18deg);
+.tearoff {
+  opacity: 0 !important;
+  transform: translateY(-2em);
+
 }
 
-100% {
-  bottom: 70%;
-  opacity: 0;
-  transform: scale(3) rotateZ(20deg);
+#sig-filter-2 {
+  transition: all 1s cubic-bezier(0,1.15,1,.97);
+  transition-delay: 1s;
 }
+
+.sigout {
+  transform: translateY(-3em);
 }
 
 /*************** Responsiveness ***********/
-/* Iphone X - Mobile */
-@media only screen and (min-width : 0px) and (max-width : 375px){
-body {
-  background-color: #FECB53;}
 
-.svg-1 {
-  width: 300px;
+/* Iphone X - Mobile */
+@media only screen and (min-width : 0px) and (max-width : 375px) {
+  .svg-1 {
+    width: 300px;
+  }
+
+  p {
+    font-family: 'Lobster', cursive;
+    text-transform: capitalize;
+    font-weight: 100;
+    font-size: 1em;
+    color: white;
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none;
+  }
+  .tekst {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-top: -4rem;
+    background-color: #9C2A22;
+    height: 9vh;
+  }
+  .svg-1 {
+    width: 400px;
+    height: 662px;
+    margin-top: -4rem;
+    cursor:pointer;
   }
 }
 
 /* Ipad - Tablet */
-@media only screen and (min-width : 376px) and (max-width : 768px){
-body {
-  background-color: #FECB53;}
-
-.svg-1 {
-  width: 350px;
+@media only screen and (min-width : 376px) and (max-width : 768px) {
+  .svg-1 {
+    width: 350px;
   }
+
+  p {
+    font-family: 'Lobster', cursive;
+    text-transform: capitalize;
+    font-weight: 100;
+    font-size: 2em;
+    color: white;
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none;
+  }
+  .tekst {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-top: -3rem;
+    background-color: #9C2A22;
+    height: 6vh;
+  }
+}
 }
 
 /* Macbook - Desktop */
-@media only screen and (min-width : 769px) and (max-width : 2000px){
-body {
-  background-color: #FECB53;}
-
-.svg-1 {
-  width: 400px;
+@media only screen and (min-width : 769px) and (max-width : 2000px) {
+  .svg-1 {
+    width: 400px;
   }
+
+  p {
+    font-family: 'Lobster', cursive;
+    text-transform: capitalize;
+    font-weight: 100;
+    font-size: 3em;
+    color: white;
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none;
+  }
+}
 }
