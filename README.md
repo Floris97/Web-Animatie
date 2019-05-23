@@ -39,9 +39,6 @@ voor deze animatie heb ik gebruikt gemaakt van keyframes met de volgende waardes
 ## Scheuren animatie
 Om het sigaretje uit het pakje te laten halen heb ik het rechter bovenhoekje van de svg appart gemaakt zodat ik deze kan toggelen met javascript class en de opacity uit laten faden met een ease-in transition. vervolgens gaat die in de functie automatisch naar de laatste animatie.
 
-## Sigaret eruit laten schieten
-voor deze animatie heb ik gebruikt ook gebruik gemaakt van een javascript toggle en de waardes in de getoggelde class translateY(-2em); meegegeven zodat het sigaretje naar boven verschuift. 
-
 #tear {
   opacity: 1;
   transition: all 3s;
@@ -51,6 +48,9 @@ voor deze animatie heb ik gebruikt ook gebruik gemaakt van een javascript toggle
   opacity: 0 !important;
   transform: translateY(-2em);
 }
+
+## Sigaret eruit laten schieten
+voor deze animatie heb ik gebruikt ook gebruik gemaakt van een javascript toggle en de waardes in de getoggelde class translateY(-2em); meegegeven zodat het sigaretje naar boven verschuift. 
 
 #sig-filter-2 {
   transition: all 1s cubic-bezier(0,1.15,1,.97);
