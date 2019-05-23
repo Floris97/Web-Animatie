@@ -50,7 +50,6 @@ voor deze animatie heb ik gebruikt ook gebruik gemaakt van een javascript toggle
 .tearoff {
   opacity: 0 !important;
   transform: translateY(-2em);
-
 }
 
 #sig-filter-2 {
