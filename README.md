@@ -92,7 +92,7 @@ document.body.onkeydown = function(e){
 
 
 ## Concept & Sfeer
-Ik wilde het pakje in laten komen alsof iemand het op tafel gooit, hiervoor heb ik ook geluid eraan toe gevoegd om het die impressie te benadrukken. Verder heb ik nog geluid gebruikt bij de schud animatie om de gebruiker te laten horen hoeveel sigaretten er nog in het pakje zitten. Het laatste geluid is een kleine easer egg (try it out). 
+Ik wilde het pakje in laten komen alsof iemand het op tafel gooit. Hiervoor heb ik ook geluid eraan toe gevoegd om het die impressie te benadrukken. Verder heb ik nog geluid gebruikt bij de schud animatie om de gebruiker te laten horen hoeveel sigaretten er nog in het pakje zitten. Het laatste geluid is een kleine easer egg (try it out). 
 
 De sfeer was te leeg en heb hiervoor een svg pattern (doodshoofden) op de achtergrond toegevoegd, roken is en blijf dodelijk.
 De gebruiker krijgt deze te zien als die over de body hovert met zijn cursor. Na enige tijd komt er ook rook te voor schijn van onder uit het beeld om het wat levendiger te maken. 
