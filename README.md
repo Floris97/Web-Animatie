@@ -3,11 +3,12 @@ Floris Elders - VID1
 ## Minor Visual Interface Design
 
 Ik heb uit het phaidon archive of graphic design een lucky strike sigaretpakje gekozen om na te maken en te animeren. 
-Het pakje wilde ik op 3 manieren animeren
+Het pakje wilde ik op 4 manieren animeren
 
 - Vallen
 - Scheuren
 - Sigaret eruit laten schieten
+- Schudden
 
 ## Vallen animatie
 voor deze animatie heb ik gebruikt gemaakt van keyframes met de volgende waardes: transform, translate3d. Ik heb met javascript de animatie laten triggeren wanneer de pagina laad. Met een animatie komt het pakje uit de lucht vallen op de pagina en hier bij heb ik ook het geluidje toegevoegd. 
