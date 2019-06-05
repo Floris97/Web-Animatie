@@ -1,4 +1,5 @@
 # Web-Animatie
+Floris Elders - Vid1
 ## Minor Visual Interface Design
 
 Ik heb uit het phaidon archive of graphic design een lucky strike sigaretpakje gekozen om na te maken en te animeren. 
@@ -66,5 +67,3 @@ voor deze animatie heb ik gebruikt ook gebruik gemaakt van een javascript toggle
 - https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement
 - https://codepen.io/rajarju/pen/OxNzYx
 - https://stackoverflow.com/questions/24386354/execute-js-code-after-pressing-the-spacebar
-
-Floris Elders - Vid1
